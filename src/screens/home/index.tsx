@@ -1,7 +1,12 @@
-import { Stack, Box, Text, Image } from "@chakra-ui/react";
 import React from "react";
+import { Stack, Box, Text, Image } from "@chakra-ui/react";
+
 import NavbarNetworks from "../../components/navbar/NavbarNetworks";
 import Section from "../../components/section/Section";
+
+import guyImage from "../../assets/images/guy.png";
+import astronautImage from "../../assets/images/astronaut.png";
+import cubesImage from "../../assets/images/cubes.png";
 
 const Home: React.FC = (props) => {
   return (
@@ -26,7 +31,7 @@ const Home: React.FC = (props) => {
             </Stack>
             <Stack flex={{ base: 0, lg: 1 }} justifyContent="center" alignItems="start">
               <Image
-                src={window.location.href + "src/assets/images/guy.png"}
+                src={guyImage}
                 alt="guy"
                 width={{ base: 211, lg: 323 }}
                 height={{ base: 158, lg: 242 }}
@@ -40,7 +45,7 @@ const Home: React.FC = (props) => {
               position="absolute"
               w={{ base: 819, md: 1250 }}
               h={{ base: 588, md: 898 }}
-              background={`url(${window.location.href + "src/assets/images/cubes.png"}) no-repeat`}
+              background={`url(${cubesImage}) no-repeat`}
               backgroundPosition={{ base: "bottom 0px right -86px", md: "bottom 180px left 220px" }}
               zIndex={-2}
             ></Stack>
@@ -56,12 +61,7 @@ const Home: React.FC = (props) => {
             background="radial-gradient(100% 2631.09% at 0% 0%, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.558) 100%)"
             backdropBlur="50px"
           >
-            <Image
-              src={window.location.href + "src/assets/images/astronaut.png"}
-              alt="astro"
-              height={{ base: 187, lg: 255 }}
-              width={{ base: 238, lg: 324 }}
-            />
+            <Image src={astronautImage} alt="astro" height={{ base: 187, lg: 255 }} width={{ base: 238, lg: 324 }} />
             <Stack w={400}>
               <Text fontWeight={700} fontSize={{ base: "16px", lg: "24px" }}>
                 Exploration
