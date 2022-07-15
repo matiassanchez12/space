@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
           </Stack>
           <Icon _hover={{ cursor: "pointer" }} as={FaBars} display={{ base: "flex", lg: "none" }} h={6} w={6} onClick={toggleDrawer} />
         </Flex>
-        <Drawer open={isOpen} onClose={toggleDrawer} direction="top" style={{ backgroundColor: "#2d3748", height: "85%" }}>
+        <Drawer open={isOpen} onClose={toggleDrawer} direction="top" style={{ backgroundColor: "#2d3748", height: "55%" }}>
           <VStack paddingY={6}>
             <Icon _hover={{ cursor: "pointer" }} as={FaWindowClose} h={6} position="absolute" right={4} w={6} onClick={toggleDrawer} />
             <Stack align="center" pt={4} spacing={10}>
